@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import CheeseCake from "../assets/01.jpg";
+import CheeseCake from "../assets/cheesecake.png";
 
 export function Home() {
   return (
