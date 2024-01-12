@@ -22,9 +22,8 @@ export function Home() {
 
       <section className="ingredients">
         <h1>Modo de preparo</h1>
+        <strong>Ingedientes:</strong>
         <ul>
-          <strong>Ingedientes:</strong>
-
           <li>200g de biscoitos maisena</li>
           <li>100g de manteiga</li>
           <li>300g de cream cheese</li>
@@ -35,9 +34,8 @@ export function Home() {
           <li>1 xícara de mirtilos</li>
         </ul>
 
+        <strong>Modo de preparo:</strong>
         <ol>
-          <strong>Modo de preparo:</strong>
-
           <li>
             Triture os biscoitos e misture com a manteiga derretida. Forre uma
             forma e leve à geladeira.

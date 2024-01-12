@@ -12,14 +12,15 @@ export const Container = styled.main`
   gap: 3.2rem;
 
   h1 {
-    font-size: 2.8rem;
-    line-height: 3.6rem;
+    font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+    line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
   }
 
   p,
   li,
   strong {
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+    line-height: clamp(1.8rem, 1vw + 0.4rem, 2.5rem);
   }
 
   img {
@@ -42,12 +43,36 @@ export const Container = styled.main`
       filter: brightness(0.9);
     }
 
-    margin-top: 1.8rem;
+    margin-top: 3.2rem;
   }
 
   .ingredients {
     h1 {
       margin-bottom: 3.2rem;
+    }
+
+    ul {
+      margin-bottom: 2.4rem;
+    }
+
+    ul,
+    ol {
+      padding-left: 2.4rem;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 19rem;
+    padding: 9rem 6rem;
+
+    .recipe {
+      max-width: 43.5rem;
+    }
+
+    .ingredients {
+      max-width: 52.5rem;
     }
   }
 `;
